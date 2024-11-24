@@ -36,3 +36,140 @@
     transform: rotate(360deg);
   }
 }
+/* General Styles */
+.app-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.description {
+  margin: 10px 0;
+  color: #555;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+.done-button {
+  padding: 8px 16px;
+  background-color: #b24d2b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.done-button:hover {
+  background-color: #9f3d1f;
+}
+
+/* Table Styles */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.data-table th {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.data-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.category {
+  padding: 4px 8px;
+  color: white;
+  border-radius: 5px;
+}
+
+.category.A {
+  background-color: #2ecc71;
+}
+
+.category.B {
+  background-color: #f1c40f;
+}
+
+.category.C {
+  background-color: #e74c3c;
+}
+
